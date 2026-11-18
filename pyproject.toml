@@ -1,0 +1,25 @@
+[project]
+name = "omfat"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "SamuelYang", email = "Samuel051391@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.0",
+    "seaborn>=0.13.2",
+    "ucimlrepo>=0.0.7",
+    "xgboost>=3.4.1",
+]
+
+[project.scripts]
+omfat = "omfat:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
